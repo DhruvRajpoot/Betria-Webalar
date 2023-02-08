@@ -37,8 +37,8 @@ const OurSkills = () => (
                         <span>{ele.title}</span>
                         <span>{ele.percentage}%</span>
                     </div>
-                    <div class="progress" style={{ height: '.4rem' }}>
-                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style={{ width: `${ele.percentage}%`, background: '#6852ED' }}></div>
+                    <div className="progress" style={{ height: '.4rem' }}>
+                        <div className="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style={{ width: `${ele.percentage}%`, background: '#6852ED' }}></div>
                     </div>
                 </div>
             })
