@@ -11,7 +11,7 @@ const AllServices = () => (
             <br />
             <MarketAnalysisCard />
         </div>
-        <div className="col-md-4" style={{ transform: 'translateY(2rem)' }}>
+        <div className="col-md-4" style={{ transform: 'translateY(1rem)' }}>
             <FeatureCard logo={dollarinvoice} heading={'Audit & Evaluation'} message={'Cras risus arcu, sodales ac, ultrices ac, mollis quis, justo. Sed a libero. …'} />
             <br />
             <FeatureCard logo={dollarhandholding} heading={'Sales & Trade'} message={'Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi …'} />

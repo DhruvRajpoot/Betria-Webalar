@@ -6,6 +6,8 @@ import AllServices from './AllServices'
 import downarrow from '../images/long-arrow-down.png'
 import homemainimage2 from '../images/homemainimage2.svg'
 import homemainimage3 from '../images/homemainimage3.svg'
+import OurSkills from './OurSkills'
+import SectionBelowSkills from './SectionBelowSkills'
 
 const handleScroll = () => {
   window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
@@ -44,7 +46,9 @@ const Home = () => (
     <div className="container" style={{ padding: "6vw 5vw" }}>
       <DetailsComponent data={details[1]} />
       <AllServices />
+      <OurSkills/>
     </div>
+    <SectionBelowSkills/>
   </>
 );
 
