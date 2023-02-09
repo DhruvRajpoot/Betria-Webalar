@@ -30,7 +30,7 @@ const OurSkills = () => (
                 </div>
             </div>
         </div>
-        <div className="col-lg-6" style={{ fontSize: '1.1rem', color: '#5B5766', fontFamily: 'Nunito',marginTop:'calc(2rem - 2vw)' }}>
+        <div className="col-lg-6" style={{ fontSize: '1.1rem', color: '#5B5766', fontFamily: 'Nunito', marginTop: 'calc(2rem - 2vw)' }}>
             {rating.map((ele, index) => {
                 return <div key={index} style={{ paddingBottom: '2vw' }}>
                     <div className="d-flex justify-content-between mb-2" >
