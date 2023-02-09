@@ -54,8 +54,12 @@ const Home = () => (
     <SectionBelowSkills />
     <div className="container" style={{ padding: "6vw" }}>
       <PlanDetails />
-      <QuestionNsupport/>
-      <Footer/>
+      <QuestionNsupport />
+    </div>
+    <div className="footer">
+      <div className="container" style={{ padding: "6vw 6vw 3vw 6vw" }}>
+        <Footer />
+      </div>
     </div>
   </>
 );

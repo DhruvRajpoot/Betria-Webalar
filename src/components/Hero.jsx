@@ -16,7 +16,7 @@ const Hero = () => (
         </div>
       </div>
     </div>
-    <div className="col-6 d-flex justify-content-end">
+    <div className="col-6 d-flex justify-content-end heroimage">
       <img src={heroImage} alt="" className='' />
     </div>
   </div>

@@ -3,7 +3,7 @@ import question from '../images/question.png'
 import support from '../images/support.png'
 
 const QuestionNsupport = () => (
-    <div className="row" style={{ fontFamily: 'Poppins',padding:'9vw 0' }}>
+    <div className="row" style={{ fontFamily: 'Poppins',padding:'9vw 0 0 0' }}>
         <div className="col-lg-6 row">
             <div className="col-2" style={{maxWidth:"4rem"}}><img src={question} alt="" /></div>
             <div className="col-10">
