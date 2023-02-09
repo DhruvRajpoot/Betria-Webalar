@@ -6,11 +6,15 @@ import Navbarupper from './components/Navbarupper'
 
 const App = () => (
   <BrowserRouter>
-    <div className="container" style={{ padding: '.4vw 6vw .2vw 6vw' }}>
-      <Navbarupper />
-    </div>
-    <hr className='mt-0 mb-3' />
-    <div className="container" style={{ padding: '0 5vw' }}>
+    {window.screen.width>756 &&
+      <>
+        <div className="container" style={{ padding: '.4vw 6vw .2vw 6vw' }}>
+          <Navbarupper />
+        </div>
+        <hr className='mt-0' />
+      </>
+    }
+    <div className="container mt-3" style={{ padding: '0 5vw' }}>
       <Navbar />
     </div>
     <Routes>

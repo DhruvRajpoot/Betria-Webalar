@@ -2,7 +2,7 @@ import { BsArrowRight } from 'react-icons/bs'
 
 const DetailsComponent = (props) => (
   <div className="row fontPoppins">
-    <div className={`col-6 d-flex justify-content-center align-items-center ${props.data.order==='2'?'order-2':''}`}>
+    <div className={`col-lg-6 d-flex justify-content-center align-items-center ${props.data.order==='2'?'order-2':''}`}>
       <div style={{ width: "85%" }}>
         <p style={{ fontSize: '1.6rem', color: '#554D89', fontWeight: "bold", textShadow: '1.8px 0px #554D89', letterSpacing: '2px',width:"92%" }}>{props.data.heading}</p>
         <br />
@@ -14,7 +14,7 @@ const DetailsComponent = (props) => (
         </div>
       </div>
     </div>
-    <div className="col-6">
+    <div className="col-lg-6">
       <img src={props.data.image} alt="" className='w-100'/>
     </div>
   </div>

@@ -3,8 +3,8 @@ import question from '../images/question.png'
 import support from '../images/support.png'
 
 const QuestionNsupport = () => (
-    <div className="row" style={{ fontFamily: 'Poppins',padding:'9vw 0 0 0' }}>
-        <div className="col-lg-6 row">
+    <div className="row" style={{ fontFamily: 'Poppins',padding:'6vw 0 0 0' }}>
+        <div className="col-lg-6 row mt-4">
             <div className="col-2" style={{maxWidth:"4rem"}}><img src={question} alt="" /></div>
             <div className="col-10">
                 <p style={{ fontSize: '1.3rem', color: "#554D89", textShadow: '1.3px 0 #554D89' }}>View common questions</p>
@@ -12,7 +12,7 @@ const QuestionNsupport = () => (
                 <button className='btn shadow-none ps-0' style={{ color: '#554D89' }}>Read more <BsArrowRight /></button>
             </div>
         </div>
-        <div className="col-lg-6 row">
+        <div className="col-lg-6 row mt-4">
             <div className="col-2" style={{maxWidth:"4rem"}}><img src={support} alt="" /></div>
             <div className="col-10">
                 <p style={{ fontSize: '1.3rem', color: "#554D89", textShadow: '1.3px 0 #554D89' }}>Looking for support?</p>

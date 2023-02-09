@@ -40,7 +40,7 @@ const Home = () => (
     <div className="container" style={{ padding: "6vw 5vw" }}>
       <Hero />
       <div style={{ textAlign: "center", marginBottom: '10vw' }}>
-        <button className='btn shadow-none' style={{ background: '#6852ED', borderRadius: "50%", padding: '2rem 2.5rem' }} onClick={handleScroll} title='scroll to bottom'><img src={downarrow} alt="" /></button>
+        <button className='btn shadow-none' style={{ background: '#6852ED', borderRadius: "50%", padding: 'calc(1rem + 1vw) calc(1.5rem + 1vw)' }} onClick={handleScroll} title='scroll to bottom'><img src={downarrow} alt="" /></button>
       </div>
       <Feature />
       <DetailsComponent data={details[0]} />

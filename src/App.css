@@ -23,11 +23,12 @@
   color: white;
 }
 
-.heroimage{
+/* hero psedo element */
+.heroimage {
   position: relative;
 }
 
-.heroimage::after{
+.heroimage::after {
   width: 100%;
   height: 80%;
   background-color: rgba(104, 82, 237, .1);
@@ -35,22 +36,52 @@
   z-index: -1;
   border-radius: 240px;
   position: absolute;
-  transform: rotate(135deg) translate(20%,-10%);
+  transform: rotate(135deg) translate(20%, -10%);
 }
 
-.footer{
-  position: relative;
-  overflow: hidden;
-  padding: 2vw 0 0 0  ;
+.contactfooter {
+  color: rgba(85, 77, 137, 1);
 }
 
-.footer::after{
-  width: 100%;
-  height: 100%;
-  background-color: #6852ED;
-  content: '';
-  z-index: -1;
-  border-radius: 240px;
-  position: absolute;
-  transform: rotate(135deg) translate(33%,130%);
+.linkcontactfooter {
+  color: rgba(85, 77, 137, 1);
+  text-decoration: none;
+}
+
+@media (min-width:992px) {
+  .translateHero {
+    transform: translateY(9rem);
+    width: 70%;
+  }
+}
+
+@media (min-width:1400px) and (max-width:1700px) {
+
+  /* footer psedo element */
+  .footer {
+    position: relative;
+    overflow: hidden;
+    padding: 2vw 0 0 0;
+  }
+
+  .footer::after {
+    width: 100%;
+    height: 100%;
+    background-color: #6852ED;
+    content: '';
+    z-index: -1;
+    border-radius: 240px;
+    position: absolute;
+    transform: rotate(135deg) translate(33%, 130%);
+    /* transform: rotate(135deg) translate(32rem,40rem); */
+    /* transform: rotate(45deg); */
+  }
+
+  .contactfooter {
+    color: white;
+  }
+
+  .linkcontactfooter {
+    color: white;
+  }
 }

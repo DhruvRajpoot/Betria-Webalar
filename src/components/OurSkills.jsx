@@ -18,8 +18,8 @@ const rating = [
 ]
 
 const OurSkills = () => (
-    <div className="row fontPoppins" style={{ paddingTop: '5vw' }}>
-        <div className="col-6 d-flex justify-content-center align-items-center">
+    <div className="row fontPoppins" style={{ padding: '5vw calc(3rem - 3vw)' }}>
+        <div className="col-lg-6 d-flex justify-content-center align-items-center">
             <div>
                 <p style={{ fontSize: '2rem', color: '#554D89', fontWeight: "bold", textShadow: '1.8px 0px #554D89', letterSpacing: '2px' }}>Our skills & expertise</p>
                 <br />
@@ -30,7 +30,7 @@ const OurSkills = () => (
                 </div>
             </div>
         </div>
-        <div className="col-6" style={{ fontSize: '1.1rem', color: '#5B5766', fontFamily: 'Nunito' }}>
+        <div className="col-lg-6" style={{ fontSize: '1.1rem', color: '#5B5766', fontFamily: 'Nunito',marginTop:'calc(2rem - 2vw)' }}>
             {rating.map((ele, index) => {
                 return <div key={index} style={{ paddingBottom: '2vw' }}>
                     <div className="d-flex justify-content-between mb-2" >

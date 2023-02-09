@@ -16,7 +16,7 @@ const AllServices = () => (
             <br />
             <FeatureCard logo={dollarhandholding} heading={'Sales & Trade'} message={'Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi …'} />
         </div>
-        <div className="col-md-4 d-flex justify-content-center align-items-center" style={{transform:'translateX(2vw)'}}>
+        <div className="col-md-4 d-flex justify-content-center align-items-center mt-5" style={{transform:'translateX(2vw)'}}>
             <div>
                 <p style={{ fontSize: '2.1rem', color: '#554D89', fontFamily:"Poppins", fontWeight: "bold", textShadow: '2px 0px #554D89', letterSpacing: '1.5px'}}>Get a solutions to your businesses</p>
                 <br />

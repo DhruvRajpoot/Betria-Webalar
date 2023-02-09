@@ -1,7 +1,7 @@
 import yes from '../images/yes.png'
 import no from '../images/no.png'
 const PriceComponent = (props) => (
-    <div style={{ fontFamily: 'Poppins', padding: '4rem', borderRadius: "10px", boxShadow: "0px 0px 20px #E1E4ED" }}>
+    <div style={{ fontFamily: 'Poppins', padding: 'calc(2rem + 2vw)', borderRadius: "10px", boxShadow: "0px 0px 20px #E1E4ED",marginBottom:"2rem" }}>
         <div className="d-flex justify-content-between">
             <h5 style={{ color: '#554D89', textShadow: "1.5px 0 #554D89", fontWeight: "700", letterSpacing: '1px' }}>{props.data.name}</h5>
             {props.data.name==='Basic' && <button className="btn fw-bold" style={{ color: "#EF7171", fontSize: ".6rem", background: "rgba(225, 228, 237, 0.6)", borderRadius: '20px', textShadow: '.5px 0 #EF7171' }}>BEST CHOICE</button>}
@@ -13,8 +13,8 @@ const PriceComponent = (props) => (
             <li className='pb-2'><img src={yes} alt="" /> Free updates</li>
             <li className='pb-2'><img src={yes} alt="" /> Custom Domain</li>
             <li className='pb-2'><img src={yes} alt="" /> Outstanding support</li>
-            <li className='pb-2'><img src={props.data.fourth === 'y' ? yes : no} alt="" style={{ marginRight: `${props.data.fourth === 'y' ? '' : '.4rem'}` }} /> Unlimited Storage</li>
-            <li className='pb-2'><img src={props.data.fifth === 'y' ? yes : no} alt="" style={{ marginRight: `${props.data.fifth === 'y' ? '' : '.4rem'}` }} /> Build Responsive website</li>
+            <li className='pb-2'><img src={props.data.fourth === 'y' ? yes : no} alt="" /><span style={{opacity:`${props.data.fourth === 'y'?'':'.8'}`,marginLeft: `${props.data.fourth === 'y' ? '.3rem' : '.7rem'}`}}>Unlimited Storage </span></li>
+            <li className='pb-2'><img src={props.data.fifth === 'y' ? yes : no} alt="" /><span style={{opacity:`${props.data.fifth === 'y'?'':'.8'}`,marginLeft: `${props.data.fifth === 'y' ? '.3rem' : '.7rem'}`}}>Build Responsive website </span></li>
         </ul>
         <br />
         <button className='btn shadow-none' style={{ borderRadius: '40px', background: "linear-gradient(26.57deg, #6852ED 16.67%, #BA43FC 100%)", color: 'white', fontWeight: "400", padding: ".8rem 2rem", letterSpacing: '.3px' }}>Getting started</button>
