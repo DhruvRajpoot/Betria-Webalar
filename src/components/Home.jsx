@@ -11,6 +11,8 @@ import SectionBelowSkills from './SectionBelowSkills'
 import PlanDetails from './PlanDetails'
 import QuestionNsupport from './QuestionNsupport'
 import Footer from './Footer'
+import Navbar from './Navbar'
+import Navbarupper from './Navbarupper'
 
 const handleScroll = () => {
   window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
@@ -37,6 +39,17 @@ const details = [
 
 const Home = () => (
   <>
+  {window.screen.width>756 &&
+      <>
+        <div className="container" style={{ padding: '.4vw 6vw .2vw 6vw' }}>
+          <Navbarupper />
+        </div>
+        <hr className='mt-0' />
+      </>
+    }
+    <div className="container mt-3" style={{ padding: '0 5vw' }}>
+      <Navbar />
+    </div>
     <div className="container" style={{ padding: "6vw 5vw" }}>
       <Hero />
       <div style={{ textAlign: "center", marginBottom: '10vw' }}>

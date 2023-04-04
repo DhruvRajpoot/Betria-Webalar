@@ -16,6 +16,8 @@
   border-radius: 40px;
   font-size: .9rem;
   padding: .5rem 1rem;
+  text-decoration: none;
+  transition: all .3s;
 }
 
 .navBtn:hover {

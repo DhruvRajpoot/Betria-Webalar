@@ -20,9 +20,9 @@ const Navbar = () => (
                     <li className="nav-item mx-2"><Link className="nav-link">Contact</Link></li>
                 </ul>
                 <div className='ms-auto fontPoppins'>
-                    <button className='btn shadow-none navBtn'>Login</button>
+                    <Link className='navBtn' to='/'>Login</Link>
                     <span className='mx-2' style={{ color: "#554D89" }}>or</span>
-                    <button className='btn shadow-none navBtn'>Create account</button>
+                    <Link className='navBtn' to='/'>Register</Link>
                 </div>
             </div>
         </div>
