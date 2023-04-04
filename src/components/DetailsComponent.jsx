@@ -16,7 +16,7 @@ const DetailsComponent = (props) => (
       </div>
     </div>
     <div className="col-lg-6">
-      <LazyLoadImage effect='blur' src={props.data.image} alt="" className='w-100' />
+      <img src={props.data.image} alt="" className='w-100' />
     </div>
   </div>
 )

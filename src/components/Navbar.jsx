@@ -7,7 +7,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 const Navbar = () => (
     <nav className="navbar navbar-expand-lg fontNunito">
         <div className="container-fluid">
-            <Link className="navbar-brand me-5" to="/"><LazyLoadImage src={logo} alt="" effect='blur'/></Link>
+            <Link className="navbar-brand me-5" to="/"><img src={logo} alt=""/></Link>
             <button className="navbar-toggler shadow-none fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <AiOutlineMenuUnfold />
             </button>

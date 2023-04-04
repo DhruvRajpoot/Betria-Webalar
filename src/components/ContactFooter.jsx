@@ -6,7 +6,7 @@ const ContactFooter = () => (
     <div style={{ fontFamily: 'Nunito', width: '75%' }} className='contactfooter'>
         <p style={{ fontSize: '1.3rem', letterSpacing: '.5px', fontFamily: 'Poppins', fontWeight: "700", textShadow: '1px 0' }}>Contacts</p>
         <div className="row pt-2">
-            <div className="col-3"><LazyLoadImage effect='blur' src={`${(window.screen.width > 1400 && window.screen.width < 1700) ? supportwhite : supportcolor}`} alt="" /></div>
+            <div className="col-3"><img src={`${(window.screen.width > 1400 && window.screen.width < 1700) ? supportwhite : supportcolor}`} alt="" /></div>
             <div className="col-9">
                 <p className='mb-0' style={{ fontSize: '.9rem' }}>Have questions?</p>
                 <a href="tel:+44 141 552 3000" className='linkcontactfooter' style={{ fontFamily: 'Poppins', fontSize: "1.3rem", fontWeight: "700", letterSpacing: '1px', textShadow: ".5px 0 white" }}>+44 141 552 3000</a>
