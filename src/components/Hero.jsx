@@ -1,5 +1,6 @@
 import heroImage from '../images/heroImage1.svg'
 import { BsArrowRight } from 'react-icons/bs'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Hero = () => (
   <div className="row fontPoppins">
@@ -16,7 +17,7 @@ const Hero = () => (
       </div>
     </div>
     <div className="col-lg-6 d-flex justify-content-end heroimage">
-      <img src={heroImage} alt="" className='w-100' />
+      <LazyLoadImage src={heroImage} alt="" className='w-100' effect='blur'/>
     </div>
   </div>
 )

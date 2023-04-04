@@ -1,3 +1,5 @@
+import { LazyLoadImage } from "react-lazy-load-image-component"
+
 const Carousel = (props) => {
     const [, ...images] = props.images
     return (
@@ -12,7 +14,7 @@ const Carousel = (props) => {
                     </div>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src={props.images[0].image} className="d-block w-100" alt="..." style={{ width: `${props.width}`, height: `${props.height}`, margin: '0 auto',transform:'translateY(-3rem)' }} />
+                            <LazyLoadImage effect="blur" src={props.images[0].image} className="d-block w-100" alt="..." style={{ width: `${props.width}`, height: `${props.height}`, margin: '0 auto',transform:'translateY(-3rem)' }} />
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>{props.images[0].caption}</h5>
                                 <p style={{fontSize:'.7rem'}}>{props.images[0].para}</p>
@@ -21,7 +23,7 @@ const Carousel = (props) => {
 
                         {images.map((element, index) => {
                             return <div className="carousel-item" key={index}>
-                                <img src={element.image} className="d-block w-100" alt="..." style={{ width: `${props.width}`, height: `${props.height}`, margin: '0 auto',transform:'translateY(-3rem)' }} />
+                                <LazyLoadImage effect="blur" src={element.image} className="d-block w-100" alt="..." style={{ width: `${props.width}`, height: `${props.height}`, margin: '0 auto',transform:'translateY(-3rem)' }} />
                                 <div className="carousel-caption d-none d-md-block">
                                     <h5>{element.caption}</h5>
                                     <p style={{fontSize:'.7rem'}}>{element.para}</p>

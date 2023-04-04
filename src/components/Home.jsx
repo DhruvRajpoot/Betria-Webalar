@@ -13,6 +13,7 @@ import QuestionNsupport from './QuestionNsupport'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import Navbarupper from './Navbarupper'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const handleScroll = () => {
   window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
@@ -39,7 +40,7 @@ const details = [
 
 const Home = () => (
   <>
-  {window.screen.width>756 &&
+    {window.screen.width > 756 &&
       <>
         <div className="container" style={{ padding: '.4vw 6vw .2vw 6vw' }}>
           <Navbarupper />
@@ -53,7 +54,7 @@ const Home = () => (
     <div className="container" style={{ padding: "6vw 5vw" }}>
       <Hero />
       <div style={{ textAlign: "center", marginBottom: '10vw' }}>
-        <button className='btn shadow-none' style={{ background: '#6852ED', borderRadius: "50%", padding: 'calc(1rem + 1vw) calc(1.5rem + 1vw)' }} onClick={handleScroll} title='scroll to bottom'><img src={downarrow} alt="" /></button>
+        <button className='btn shadow-none' style={{ background: '#6852ED', borderRadius: "50%", padding: 'calc(1rem + 1vw) calc(1.5rem + 1vw)' }} onClick={handleScroll} title='scroll to bottom'><LazyLoadImage src={downarrow} alt="" effect='blur'/></button>
       </div>
       <Feature />
       <DetailsComponent data={details[0]} />
